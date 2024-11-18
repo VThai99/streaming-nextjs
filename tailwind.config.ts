@@ -1,24 +1,23 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-alpino)", "sans-serif"],
+        sans: ['var(--font-alpino)', 'sans-serif'],
       },
       keyframes: {
-        "slide-left": {
-          "0%": { transform: "translateX(0)" },
-          "100%": { transform: "translateX(-100%)" },
+        'slide-left': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
       animation: {
-        "slide-left": "slide-left 3s linear infinite",
-        "spin-slow": "spin 6s linear infinite",
+        'slide-left': 'slide-left 3s linear infinite',
+        'spin-slow': 'spin 6s linear infinite',
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
-};
-export default config;
+}
+export default config
